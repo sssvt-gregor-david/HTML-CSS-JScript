@@ -1,0 +1,37 @@
+main {
+    text-align: center;
+    display: flex;
+}
+
+p {
+    background: yellow;
+    border: 1px solid #333;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.part {
+    flex: 1 0 auto;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 0 auto;
+}
+
+.part1 {
+    flex:1;
+}
+
+.part2 {
+    flex:1;
+}
+

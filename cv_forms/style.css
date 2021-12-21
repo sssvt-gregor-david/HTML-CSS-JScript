@@ -1,0 +1,27 @@
+.KonUd {
+    border: solid #999999 1px;
+    min-height: 250px;
+}
+
+.Obj {
+    border: solid #999999 1px;
+    min-height: 250px;
+}
+
+.Platba {
+    border: solid #999999 1px;
+    min-height: 150px;
+}
+
+.Info {
+    border: solid #999999 1px;
+    min-height: 100px;
+}
+
+#txtArea {
+    resize: none;
+}
+
+#txtAreaInfo {
+    resize: none;
+}

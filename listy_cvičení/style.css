@@ -1,0 +1,56 @@
+ul{
+    list-style-position: inside;
+    list-style-image: url("photos/list.png");
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.invistext {
+    padding-left: 325px;
+    color: greenyellow;
+}
+
+ul li:nth-child(2n) {
+    background: #dedede;
+    width: 500px;
+}
+
+ul li:nth-child(2n-1) {
+    background: #eeeeee;
+    width: 500px;
+}
+
+ul > li:hover {
+    background-color: white;
+    font-weight: 900;
+    list-style-image: url("photos/smile.gif");
+}
+
+ol {
+    list-style-position: inside;
+    list-style-type: none;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ol li {
+    background: #dedede;
+    width: 500px;
+    height: 50px;
+}
+
+ol {
+    background-image: url("photos/nice-img.png");
+}
+
+ol > li:hover {
+    background-color: transparent;
+}
+
+
+
+
+
+

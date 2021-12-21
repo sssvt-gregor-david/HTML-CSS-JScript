@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        main{
+            display: grid;
+
+            grid-template-columns: 4fr 3fr 3fr;
+            grid-template-rows: 1fr 4fr 2fr 3fr 2fr 1fr;
+
+            grid-template-areas:"header     header        header"
+                                "hero       main-content  main-content "
+                                "sidebar    main-content  main-content"
+                                "sidebar    extra-content extra-content"
+                                "related-images related-images related-posts"
+                                "footer     footer        footer";
+
+            row-gap: 12px;
+            column-gap: 10px;
+            max-width: 750px;
+            min-height: 900px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: xx-large;
+            font-family: sans-serif;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .content
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .header {
+            background-color:deepskyblue;
+            vertical-align: middle;
+            grid-area: header;
+        }
+
+        .hero {
+            background-color:mediumorchid;
+            grid-area: hero;
+        }
+
+        .sidebar {
+            background-color:lawngreen;
+            grid-area: sidebar;
+        }
+
+        .related-images {
+            background-color:darkgreen;
+            grid-area: related-images;
+        }
+
+        .main-content {
+            background-color:yellow;
+            grid-area: main-content;
+        }
+
+        .extra-content {
+            background-color:gray;
+            grid-area: extra-content;
+        }
+
+        .related-posts {
+            background-color:pink;
+            grid-area: related-posts;
+        }
+
+        .footer {
+            background-color:orange;
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+
+<body>
+<main>
+    <div class = "header">
+        <div class = "content">
+            Header
+        </div>
+    </div>
+
+    <div class = "main-content">
+        Main Content
+    </div>
+
+    <div class = "hero">
+        Hero
+    </div>
+
+    <div class = "sidebar">
+        Sidebar
+    </div>
+
+    <div class = "extra-content">
+        Extra Content
+    </div>
+
+    <div class = "related-images">
+        Related Images
+    </div>
+
+    <div class = "related-posts">
+        Related Posts
+    </div>
+
+    <div class = "footer">
+        Footer
+    </div>
+
+
+</main>
+</body>
+
+</html>

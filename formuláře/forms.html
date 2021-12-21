@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<form action="submit.php" method="post" autocomplete="off ">
+
+    <label for="1">Jméno</label>
+    <input type="text" id="1" name="name">
+
+    <label>
+        Příjmení
+        <input type="text" name="surname" required minlength="5" value="ŠTURMA">
+    </label>
+
+    <label>
+        Heslo
+        <input type="password" name="password" placeholder="ZADEJ HESLO" required>
+    </label>
+
+    <label>
+        Date
+        <input type="date" name="date" max="2021-11-16">
+    </label>
+
+    <label>
+        Time
+        <input type="time" name="time">
+    </label>
+
+    <label>
+        Email
+        <input type="email" name="email">
+    </label>
+
+    <label>
+        URL
+        <input type="url" name="url">
+    </label>
+
+    <label>
+        Telefon
+        <input type="tel" name="telephone">
+    </label>
+
+    <label>
+        Number
+        <input type="number" name="number" min="10" max="200" step="2.24568">
+    </label>
+
+    <label>
+        <input type="checkbox" name="checkbox" value="1" checked>
+        Souhlasím se smlouvou
+    </label>
+
+    <label>
+        <input type="radio" name="gender" value="M" required>
+        Muž
+    </label>
+
+    <label>
+        <input type="radio" name="gender" value="F" required>
+        Žena
+    </label>
+
+    <label>
+        <input type="radio" name="gender" value="?" required>
+        JINÉ
+    </label>
+
+    <label>
+        <input type="file" name="file" multiple accept="image/*">
+        gg
+    </label>
+
+    <label>
+        <textarea name="info" id="" cols="30" rows="10">ausgegangen</textarea>
+    </label>
+
+    <label>
+        <select name="zelenina" id="z" required>
+            <option value="" disabled selected>---</option>
+            <option value="1">rajče</option>
+            <option value="2">okurka</option>
+            <option value="3">kukuřice</option>
+            <option value="4">paprika</option>
+            <option value="5">králík</option>
+        </select>
+    </label>
+
+    <input type="submit" value="Registration">
+    <input type="reset" value="reset">
+    <input type="button" value="button">
+
+    <button>
+        Registrovat <strong>NYNÍ</strong>
+    </button>
+
+        <input type="color">
+        <br>
+        <input type="range" min="0" max="100" step="10">
+        <br>
+            <progress max="100" value="70"></progress>
+
+</form>
+
+</body>
+</html>

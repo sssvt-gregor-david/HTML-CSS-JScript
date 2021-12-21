@@ -1,0 +1,22 @@
+h1 {
+    /*color: #aa5588;*/
+    color: rgba(150,111,50,0.9);
+}
+
+/*komentář v CSS*/
+
+p strong {
+    color: red;
+}
+
+ #testing {
+     color:goldenrod;
+ }
+
+ .yellow {
+     background-color: yellow;
+ }
+
+ strong.yellow {
+     text-decoration: underline overline line-through;
+ }

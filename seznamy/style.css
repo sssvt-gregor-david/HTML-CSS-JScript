@@ -1,0 +1,18 @@
+ul{
+    /*list-style-type: circle;*/
+    list-style-position: inside;
+    list-style-image: url("photos/fajfka.png");
+
+}
+
+ul li {
+    background-image: url("photos/img_1.png");
+    background-repeat: no-repeat;
+    list-style-type: none;
+    padding-left: 30px;
+    background-size: 150px;
+}
+
+ul li:nth-child(2n) {
+    background: #dedede;
+}

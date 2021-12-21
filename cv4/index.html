@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        main {
+
+            display: grid;
+
+            /*grid-template-columns: 200px auto 200px;*/
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 100px 600px 200px;
+
+            grid-template-areas:"header     header      header"
+                                "side-l     content     side-r"
+                                "footer     footer      footer";
+
+            row-gap: 12px;
+            column-gap: 12px;
+        }
+
+        .header {
+            background-color:red;
+
+            /*grid-column: 1 / 4;
+            grid-row: 1 / 2;*/
+
+            grid-area: header;
+        }
+
+        .footer {
+            background: lightblue;
+            /*grid-column: 1 / 4;
+            grid-row: 3 / 4;*/
+
+            grid-area: footer;
+        }
+
+        .content {
+            background: yellow;
+
+            /*grid-column: 2/3;
+            grid-row: 2/3;*/
+
+            grid-area: content;
+        }
+
+        .left-side, .right-side {
+            background-color: darkolivegreen;
+        }
+
+        .left-side {
+            /*grid-column: 1 / 2;*/
+
+            grid-area: side-l;
+        }
+
+        .right-side {
+            /*grid-column: 3 / 4;*/
+
+            grid-area: side-r;
+        }
+
+    </style>
+
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <div class = "header">
+        header
+    </div>
+
+    <div class = "left-side">
+        left-side
+    </div>
+
+    <div class = "content">
+        content
+    </div>
+
+    <div class = "right-side">
+        right-side
+    </div>
+
+    <div class = "footer">
+    footer
+    </div>
+
+</main>
+
+</body>
+</html>

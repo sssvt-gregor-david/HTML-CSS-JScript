@@ -1,0 +1,207 @@
+main {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 550px 2fr 2fr 1fr ;
+
+    grid-template-areas:  "links    links"
+                          "banner    banner"
+                          "article1  article2"
+                          "article3     article4"
+                          "foot     foot";
+
+
+    row-gap: 12px;
+    column-gap: 12px;
+
+    justify-content: center;
+    margin: auto;
+    color: white;
+
+}
+
+.links {
+    grid-area: links;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-container > div {
+    background-color: deepskyblue;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 30px;
+
+    border-radius: 5px;
+}
+
+.banner {
+    grid-area: banner;
+    background: deepskyblue;
+    text-align: right;
+    font-size: 50px;
+    border-radius: 5px;
+
+    border-radius: 25px;
+}
+
+.article1 {
+    grid-area: article1;
+    background: deepskyblue;
+    text-align: right;
+    font-size: 50px;
+
+    border-radius: 15px;
+}
+
+.article2 {
+    grid-area: article2;
+    background: deepskyblue;
+    text-align: right;
+    font-size: 50px;
+
+    border-radius: 15px;
+}
+
+.article3 {
+    grid-area: article3;
+    background: deepskyblue;
+    text-align: right;
+    font-size: 50px;
+
+    border-radius: 15px;
+}
+
+.article4 {
+    grid-area: article4;
+    background: deepskyblue;
+    text-align: right;
+    font-size: 50px;
+
+    border-radius: 15px;
+}
+
+.footer {
+    grid-area: foot;
+    background: deepskyblue;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px){
+    main {
+        background-color: red;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px){
+    main {
+        background-color: magenta;
+        display: block;
+
+        justify-content: center;
+        text-align: center;
+
+        padding: 10px 10px 10px 10px;
+
+
+    }
+
+    .links {
+        grid-area: links;
+        margin-bottom: 3%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 3%;
+    }
+
+    .flex-container > div {
+        background-color: deepskyblue;
+        margin-right: 0;
+        text-align: center;
+        font-size: 30px;
+
+        border-radius: 5px;
+        margin-bottom: 3%;
+    }
+
+    .banner {
+        grid-area: banner;
+        background: deepskyblue;
+        text-align: center;
+        font-size: 50px;
+        border-radius: 5px;
+
+        border-radius: 25px;
+        margin-bottom: 3%;
+    }
+
+    .article1 {
+        grid-area: article1;
+        background: deepskyblue;
+        text-align: center;
+        font-size: 50px;
+
+        border-radius: 15px;
+        margin-bottom: 3%;
+    }
+
+    .article2 {
+        grid-area: article2;
+        background: deepskyblue;
+        text-align: center;
+        font-size: 50px;
+
+        border-radius: 15px;
+        margin-bottom: 3%;
+    }
+
+    .article3 {
+        grid-area: article3;
+        background: deepskyblue;
+        text-align: center;
+        font-size: 50px;
+
+        border-radius: 15px;
+        margin-bottom: 3%;
+    }
+
+    .article4 {
+        grid-area: article4;
+        background: deepskyblue;
+        text-align: center;
+        font-size: 50px;
+
+        border-radius: 15px;
+        margin-bottom: 3%;
+    }
+
+    .footer {
+        grid-area: foot;
+        background: deepskyblue;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+
+        border-radius: 5px;
+        margin-bottom: 3%;
+    }
+
+
+}

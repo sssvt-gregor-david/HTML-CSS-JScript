@@ -1,0 +1,354 @@
+@media screen and (min-width: 800px){
+
+    main {
+
+        display: grid;
+
+        grid-template-columns: 20% 4fr 4fr 3fr 3fr 4fr 4fr;
+        grid-template-rows: 2fr 2fr 6fr 3fr 3fr 1fr ;
+
+        grid-template-areas:  "head head head head head head head"
+                          "redPanel purplePanel purplePanel purplePanel purplePanel purplePanel purplePanel"
+                          "redPanel orangePanel orangePanel orangePanel orangePanel2 orangePanel2 orangePanel2"
+                          "redPanel blue1 blue2 blue3 blue3 blue4 blue5 "
+                          "redPanel dvamod1 dvamod2 trimod trimod dvamod3 dvamod4"
+                          "footer footer footer footer footer footer footer";
+
+
+        row-gap: 12px;
+        column-gap: 12px;
+
+        justify-content: center;
+        margin: auto;
+        min-height: 900px;
+
+        font-weight: 700;
+        font-size: 25px;
+
+    }
+
+    .head {
+        grid-area: head;
+        background-color: limegreen;
+
+    }
+
+    .redPanel {
+        grid-area: redPanel;
+        background-color: red;
+    }
+
+    .purplePanel {
+        grid-area: purplePanel;
+        background-color: magenta;
+    }
+
+    .orangePanel {
+        grid-area: orangePanel;
+        background-color: coral;
+    }
+
+    .orangePanel2 {
+        grid-area: orangePanel2;
+        background-color: coral;
+    }
+
+    .blue1 {
+        grid-area: blue1;
+        background-color: blue;
+    }
+
+    .blue2 {
+        grid-area: blue2;
+        background-color: blue;
+    }
+
+    .blue3 {
+        grid-area: blue3;
+        background-color: blue;
+    }
+
+    .blue4 {
+        grid-area: blue4;
+        background-color: blue;
+    }
+
+    .blue5 {
+        grid-area: blue5;
+        background-color: blue;
+    }
+
+    .dvamod1 {
+        grid-area: dvamod1;
+        background-color: blue;
+    }
+
+    .dvamod2 {
+        grid-area: dvamod2;
+        background-color: blue;
+    }
+
+    .trimod {
+        grid-area: trimod;
+        background-color: blue;
+    }
+
+    .dvamod3 {
+        grid-area: dvamod3;
+        background-color: blue;
+    }
+
+    .dvamod4 {
+        grid-area: dvamod4;
+        background-color: blue;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: limegreen;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    main {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 5fr 5fr 4fr 4fr 4fr 4fr 4fr 1fr;
+
+        grid-template-areas:
+                "head head"
+        "purplePanel purplePanel"
+        "orangePanel orangePanel"
+        "orangePanel2 orangePanel2"
+        "blue1 blue2"
+        "blue3 blue4"
+        "blue5 trimod"
+        "dvamod1 dvamod2"
+        "dvamod3 dvamod4"
+        "footer footer";
+
+
+
+
+
+        row-gap: 12px;
+        column-gap: 12px;
+
+        justify-content: center;
+        margin: auto;
+        min-height: 900px;
+
+        font-weight: 700;
+        font-size: 25px;
+
+    }
+
+    .head {
+        grid-area: head;
+        background-color: limegreen;
+
+    }
+
+    .redPanel {
+        display: none;
+    }
+
+    .purplePanel {
+        grid-area: purplePanel;
+        background-color: magenta;
+    }
+
+    .orangePanel {
+        grid-area: orangePanel;
+        background-color: coral;
+    }
+
+    .orangePanel2 {
+        grid-area: orangePanel2;
+        background-color: coral;
+    }
+
+    .blue1 {
+        grid-area: blue1;
+        background-color: blue;
+    }
+
+    .blue2 {
+        grid-area: blue2;
+        background-color: blue;
+    }
+
+    .blue3 {
+        grid-area: blue3;
+        background-color: blue;
+    }
+
+    .blue4 {
+        grid-area: blue4;
+        background-color: blue;
+    }
+
+    .blue5 {
+        grid-area: blue5;
+        background-color: blue;
+    }
+
+    .dvamod1 {
+        grid-area: dvamod1;
+        background-color: blue;
+    }
+
+    .dvamod2 {
+        grid-area: dvamod2;
+        background-color: blue;
+    }
+
+    .trimod {
+        grid-area: trimod;
+        background-color: blue;
+    }
+
+    .dvamod3 {
+        grid-area: dvamod3;
+        background-color: blue;
+    }
+
+    .dvamod4 {
+        grid-area: dvamod4;
+        background-color: blue;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: limegreen;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 401px)
+{
+    main {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr 4fr 4fr 3fr 3fr 3fr 3fr 1fr;
+
+        grid-template-areas:
+                "head head head head"
+        "redPanel purplePanel purplePanel purplePanel"
+        "redPanel orangePanel orangePanel orangePanel"
+        "redPanel orangePanel2 orangePanel2 orangePanel2"
+        "redPanel blue1 blue2 blue3"
+        "redPanel blue4 blue5 dvamod1"
+        "redPanel dvamod2 trimod dvamod3"
+        "redPanel dvamod4 empty empty"
+        "footer footer footer footer";
+
+
+
+
+
+
+
+
+
+
+        row-gap: 12px;
+        column-gap: 12px;
+
+        justify-content: center;
+        margin: auto;
+        min-height: 900px;
+
+        font-weight: 700;
+        font-size: 25px;
+
+    }
+
+    .head {
+        grid-area: head;
+        background-color: limegreen;
+
+    }
+
+    .redPanel {
+        grid-area: redPanel;
+        background-color: red;
+    }
+
+    .purplePanel {
+        grid-area: purplePanel;
+        background-color: magenta;
+    }
+
+    .orangePanel {
+        grid-area: orangePanel;
+        background-color: coral;
+    }
+
+    .orangePanel2 {
+        grid-area: orangePanel2;
+        background-color: coral;
+    }
+
+    .blue1 {
+        grid-area: blue1;
+        background-color: blue;
+    }
+
+    .blue2 {
+        grid-area: blue2;
+        background-color: blue;
+    }
+
+    .blue3 {
+        grid-area: blue3;
+        background-color: blue;
+    }
+
+    .blue4 {
+        grid-area: blue4;
+        background-color: blue;
+    }
+
+    .blue5 {
+        grid-area: blue5;
+        background-color: blue;
+    }
+
+    .dvamod1 {
+        grid-area: dvamod1;
+        background-color: blue;
+    }
+
+    .dvamod2 {
+        grid-area: dvamod2;
+        background-color: blue;
+    }
+
+    .trimod {
+        grid-area: trimod;
+        background-color: blue;
+    }
+
+    .dvamod3 {
+        grid-area: dvamod3;
+        background-color: blue;
+    }
+
+    .dvamod4 {
+        grid-area: dvamod4;
+        background-color: blue;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: limegreen;
+    }
+}
+
+
+

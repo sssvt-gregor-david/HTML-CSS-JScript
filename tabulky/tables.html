@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+      body {
+          font-family: sans-serif;
+      }
+
+      table, td, th {
+          border-style: solid;
+          border-width: 2px;
+
+          border-collapse: collapse;
+      }
+
+      td, th {
+          padding: 4px 8px;
+      }
+
+      tr:nth-child(2n-1) {
+          background-color: yellow;
+      }
+
+      td:nth-child(3) {
+          color: blue;
+      }
+
+      .lime {
+          background-color: lime;
+          color: blue;
+      }
+
+  </style>
+
+</head>
+<body>
+
+<table>
+
+    <caption>
+        <h2>Výsledková listina</h2>
+    </caption>
+
+    <colgroup>
+        <col>
+        <col>
+        <col class="lime">
+        <col>
+        <col>
+    </colgroup>
+
+    <thead><tr>
+        <th>
+
+        </th>
+        <th>
+            1.kolo
+        </th>
+        <th>
+            2.kolo
+        </th>
+        <th>
+            CELKEM
+        </th>
+        <th>
+            úplně CELKEM
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th>Karel</th>
+        <td>4</td>
+        <td>5</td>
+        <td>9</td>
+        <td rowspan="3">28</td>
+    </tr>
+    <tr>
+        <th>Franta</th>
+        <td>5</td>
+        <td>6</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <th>Evžen</th>
+        <td>5</td>
+        <td>3</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <th>Karel</th>
+        <td>4</td>
+        <td>5</td>
+        <td>9</td>
+        <td rowspan="3">28</td>
+    </tr>
+    <tr>
+        <th>Franta</th>
+        <td>5</td>
+        <td>6</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <th>Evžen</th>
+        <td>5</td>
+        <td>3</td>
+        <td>8</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <th>CELKEM</th>
+        <td colspan="2"></td>
+        <td></td>
+        <td rowspan="2"></td>
+    </tr>
+    </tfoot>
+
+
+</table>
+
+</body>
+</html>

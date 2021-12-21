@@ -1,0 +1,10 @@
+.Photos img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    display: inline-block;
+    text-align: center;
+}
+
+
+

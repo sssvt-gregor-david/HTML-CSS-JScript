@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picový formulář</title>
+
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>PIZZA SHOP 2.0</h1>
+
+<form action="submit.php" method="post" autocomplete="off ">
+    <div class = "KonUd">
+        Kontaktní údaje
+        <br>
+        <br>
+
+        <label>
+            Jméno
+            <input type="text" name="name" placeholder="Zadejte své jméno" required>
+        </label>
+        <br>
+        <label>
+            Adresa dodání
+            <textarea name="info" id="txtArea" cols="20" rows="2" placeholder="Vaše adresa" required></textarea>
+        </label>
+        <br>
+        <label>
+            Date
+            <input type="date" name="date" max="2021-11-20" min="2021-11-18" required>
+        </label>
+        <br>
+        <label>
+            Telefon
+            <input type="tel" name="telephone" minlength="9" required>
+        </label>
+        <br>
+        <label>
+            Email
+            <input type="email" name="email" required>
+        </label>
+
+    </div>
+
+    <div class="Obj">
+        Objednávka
+        <br>
+        <br>
+        Pizza
+
+        <label>
+            <select name="pizzy" id="z" required>
+                <option value="" disabled selected>Vyberte pizzu</option>
+                <option value="1" disabled>PIZZA Ø 32 cm</option>
+                <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;MARGHERITA</option>
+                <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;VEGETARIANA</option>
+                <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;PROSCIUTTO COTTO</option>
+                <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;MARSALA</option>
+                <option value="6">&nbsp;&nbsp;&nbsp;&nbsp;SPINACI</option>
+                <option value="7">&nbsp;&nbsp;&nbsp;&nbsp;HAWAII</option>
+                <option value="8" disabled>PIZZA Ø 46 cm</option>
+                <option value="9">&nbsp;&nbsp;&nbsp;&nbsp;MARGHERITA</option>
+                <option value="10">&nbsp;&nbsp;&nbsp;&nbsp;VEGETARIANA</option>
+                <option value="11">&nbsp;&nbsp;&nbsp;&nbsp;PROSCIUTTO COTTO</option>
+                <option value="12">&nbsp;&nbsp;&nbsp;&nbsp;MARSALA</option>
+                <option value="13">&nbsp;&nbsp;&nbsp;&nbsp;SPINACI</option>
+                <option value="14">&nbsp;&nbsp;&nbsp;&nbsp;HAWAII</option>
+            </select>
+        </label>
+
+        <label>
+            Počet ks
+            <input type="number" name="number" min="1" max="20" step="1" required>
+        </label>
+
+        <br>
+        Příplatky na pizzu
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            100g salám
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            100g mozzarela
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            100g slanina
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            50g parmezán
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            100g šunka
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            50g olivy
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox" value="1">
+            1 vejce
+        </label>
+        <br>
+        Omáčka na pizzu
+        <label>
+            <input type="radio" name="sauce" value="tomatova">
+            Tomatová
+        </label>
+
+        <label>
+            <input type="radio" name="sauce" value="smetanova">
+            Smetanová
+        </label>
+
+        <label>
+            <input type="radio" name="sauce" value="paliva">
+            Pálivá
+        </label>
+
+    </div>
+
+    <div class = "Platba">
+
+        Platba
+        <br>
+        <label>
+            <input type="radio" name="platba" value="hotovePrachy">
+            Hotově při převzetí
+        </label>
+        <label>
+            <input type="radio" name="platba" value="hotoveKarta">
+            Platební kartou při převzetí
+        </label>
+        <label>
+            <input type="radio" name="platba" value="online">
+            Online
+        </label>
+        <label>
+            <input type="radio" name="platba" value="stravenka">
+            Stravenkou
+        </label>
+    </div>
+
+    <div class = "Info">
+
+        Další informace k objednávce
+        <br>
+        <label>
+            <textarea name="info" id="txtAreaInfo" cols="20" rows="2" placeholder="Napište nám další informace nebo požadavky" required></textarea>
+        </label>
+
+    </div>
+
+    <input type="submit" value="Odeslat objednávku">
+    <input type="reset" value="Zrušit objednávku">
+</form>
+
+</body>
+</html>
